@@ -1,0 +1,163 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('img.png') no-repeat center center fixed; /* Add your background image here */
+    background-size: cover;
+    color: #333;
+}
+
+/* Style the container */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Style the header */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ff6f61;
+}
+
+h1 {
+    color: #de1b1b;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Style the image section */
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-section img {
+    /* max-width: 100%; */
+    width: 650px;
+    height: 533px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Style the ingredients and instructions sections */
+.ingredients, .instructions {
+    margin-bottom: 20px;
+    background-color: #fefefe;
+    padding: 15px;
+    border-left: 5px solid #de1b1b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #ff6f61;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+ol {
+    padding-left: 20px;
+    color: #333;
+}
+
+ol li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Button styles */
+button {
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #de1b1b;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    li, ol li {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    li, ol li {
+        font-size: 0.9em;
+    }
+}
